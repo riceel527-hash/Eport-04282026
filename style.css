@@ -16,6 +16,15 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
 section{
   background-color: rgb(245, 245, 245);
 }
@@ -81,8 +90,21 @@ section{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: none;
 }
 
+.mail__btn {
+  background-color: #242424;
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  bottom: 32px;
+    right: 40px;
+}
 
 
 
