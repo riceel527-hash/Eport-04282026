@@ -208,18 +208,24 @@ nav {
 
 .project__img {
   width: 100%;
-}
 
+}
 
 .project__wrapper {
   position: relative;
+
 }
+
+
 
 .project__description {
   position: absolute;
   top: 50%;
   left: 90px;
   transform: translateY(-50%);
-  color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
+  color: black;
   max-width: 550px;
 }
+
