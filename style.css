@@ -217,7 +217,7 @@ nav {
 }
 
 
-.project__description {
+/*.project__description {
   position: absolute;
   top: 50%;
   left: 90px;
@@ -226,7 +226,8 @@ nav {
   max-width: 550px;
 }
 
-/*//.project__wrapper--bg {
+/*
+/.project__wrapper--bg {
   position: absolute;
   top: 0;
   left: 0;
