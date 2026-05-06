@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "pcMbVjjCOaA8Ua1no",
+      });
+   })();
+</script>
 </head>
 <body>
    <section id="landing-page">
@@ -128,10 +138,16 @@
     <button id="contact__submit" class="form__submit">
       Send it my way!
     </button> 
-</form>
-          </figure>
+   </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>    
         </div>
-    </div>  
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! I look forward to chatting with you soon.
+        </div>
+    </div> 
+     <i class="fas fa-times modal__exit click"></i>
+    </div>
   </section>
 <section id="projects">
   <div class="container">
