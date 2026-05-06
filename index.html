@@ -6,16 +6,13 @@
     <title>Ed Rice</title>
     <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+<script src="index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
    (function(){
-      emailjs.init({
-        publicKey: "pcMbVjjCOaA8Ua1no",
-      });
-   })();
+      emailjs.init("user_pcMbVjjCOaA8Ua1no");
+      })();
 </script>
 </head>
 <body>
@@ -122,18 +119,18 @@
       <div class="modal__half modal__contact">
    <h3 class="modal__title modal__title--contact"> Let's have a chat!</h3>
    <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h3> 
-  <form id="contact__form"action="">
+  <form id="contact__form"onsubmit="contact(event)">
   <div class="form__item">
     <label class="form__item--label">Name</label>
-    <input class="input" name="user_name" type="text" required></input>
+    <input class="input" name="user_name" type="text"></input>
   </div>
   <div class="form__item">
     <label class="form__item--label">Email</label>
-    <input class="input" name="user_email" type="email" required></input>
+    <input class="input" name="user_email" type="email"></input>
   </div>
   <div class="form__item">
     <label class="form__item--label">Message</label>
-    <textarea class="input" name="message" type="text" required></textarea>
+    <textarea class="input" name="message" type="text"></textarea>
   </div>
     <button id="contact__submit" class="form__submit">
       Send it my way!
