@@ -19,10 +19,22 @@ emailjs.sendForm(
     })
 }
 
-//setTimeout(() => {
+let isModalOpen = false;
+function toggleModal() {
+    isModalOpen = !isModalOpen;
+    if(isModalOpen){
+        return document.body.classList.remove("modal--open");
+    }
+    
+//toggle modal
+document.body.classList += " modal--open";
+}
+   // if (isModalOpen) {
+    //isModalOpen = false;
+    //return document.body.classList.remove("modal--open");
+  //}
+  //isModalOpen = true;
+  
 
-//console.log('it worked 1')    
-//}, 1000);
 
-//}
 
