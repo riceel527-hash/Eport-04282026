@@ -1,3 +1,16 @@
+let isModalOpen = false;
+let contrastToggle = false;
+function toggleContrast(){
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
 
 function contact(event) {
  event.preventDefault();
@@ -19,22 +32,23 @@ emailjs.sendForm(
     })
 }
 
-let isModalOpen = false;
-function toggleModal() {
-    isModalOpen = !isModalOpen;
-    if(isModalOpen){
+
+function toggleModal() {   
+    if(isModalOpen) {
+      isModalOpen  = false;
         return document.body.classList.remove("modal--open");
     }
-    
-//toggle modal
+    isModalOpen = true; 
 document.body.classList += " modal--open";
 }
+
+
    // if (isModalOpen) {
     //isModalOpen = false;
     //return document.body.classList.remove("modal--open");
   //}
   //isModalOpen = true;
-  
-
-
+  //toggle modal
+//isModalOpen = !isModalOpen;
+//isModalOpen = !isModalOpen;
 
